@@ -29,3 +29,7 @@
     background-color: rgb(177, 97, 43);
 
 }
+.eye-grabber {
+    display: flex;
+    justify-content: center;
+}
