@@ -25,10 +25,6 @@
 .divider {
     border-bottom: 7px solid rgb(177, 97, 43);
 }
-.small-toggler {
-    background-color: rgb(177, 97, 43);
-
-}
 .eye-grabber {
     display: flex;
     justify-content: center;
@@ -56,7 +52,6 @@ h1, h2, h3, h4 {
 }
 .video {
     width: 1000px;
-    
 }
 .btn {
     color: rgb(177, 97, 43) !important; 
@@ -66,4 +61,13 @@ h1, h2, h3, h4 {
     background-color:  rgb(11, 41, 21);
     border: 2px solid rgb(177, 97, 43);
     border-radius: 5px;
+}
+.big-eye-grabber {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(11, 41, 21);
+    border: 5px solid rgb(177, 97, 43);
+}
+.details {
+    text-decoration: overline;
 }
