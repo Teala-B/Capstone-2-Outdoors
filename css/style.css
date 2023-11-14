@@ -61,3 +61,9 @@ h1, h2, h3, h4 {
 .btn {
     color: rgb(177, 97, 43) !important; 
 }
+.custom-button {
+    padding: 10px 20px;
+    background-color:  rgb(11, 41, 21);
+    border: 2px solid rgb(177, 97, 43);
+    border-radius: 5px;
+}
