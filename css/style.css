@@ -1,0 +1,18 @@
+.logo {
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-link {
+    color: rgb(155, 84, 37);
+    font-size: large;
+}
+* {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#navBar {
+    background-color: white !important;
+}
+.divider{
+    border-bottom: 10px solid;
+}
