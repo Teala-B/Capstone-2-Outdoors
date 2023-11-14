@@ -58,3 +58,6 @@ h1, h2, h3, h4 {
     width: 1000px;
     
 }
+.btn {
+    color: rgb(177, 97, 43) !important; 
+}
