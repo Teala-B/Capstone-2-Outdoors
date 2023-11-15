@@ -83,8 +83,8 @@ function filterByState() {
 }
 
 function displayParks(parks) {
-    const parentDiv = document.getElementById("displayParks")
-    parentDiv.innerText = ""
+    const parentDiv = document.getElementById("displayParks");
+    parentDiv.innerText = "";
 
     parks.forEach(park => {
         individulPark(park, parentDiv)
@@ -110,7 +110,7 @@ function individulPark(park, parentDiv) {
 
 function addName(park, parkInfoDiv) {
     // add product header
-    const parkName = document.createElement("h6")
+    const parkName = document.createElement("h5");
     parkName.innerText = park.LocationName;
     parkInfoDiv.appendChild(parkName);
 }
@@ -123,7 +123,7 @@ function addAddress(park, parkInfoDiv) {
         if (key == "Address" || key == "City" || key == "Zip") {
             if(park[key] != 0) parkAddress.innerText +=` ${park[key]}`;
         }
-        else if (key == "State")parkAddress.innerText +=`, ${park[key]}`
+        else if (key == "State")parkAddress.innerText +=`, ${park[key]}`;
     }
     
     parkInfoDiv.appendChild(parkAddress);
@@ -131,7 +131,7 @@ function addAddress(park, parkInfoDiv) {
 }
 
 function addContact(park, parkInfoDiv) {
-    const contactInfo = document.createElement("p")
+    const contactInfo = document.createElement("p");
     for (const key in park) {
         if (key == "Phone") {
             if(park[key] != 0) contactInfo.innerText +=`Phone: ${park[key]}`;
