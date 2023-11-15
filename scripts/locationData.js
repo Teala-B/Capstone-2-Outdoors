@@ -1,4 +1,4 @@
-const locationsArray = [
+   const locationsArray = [
     "Alabama",
     "Alaska",
     "American Samoa",
@@ -55,3 +55,15 @@ const locationsArray = [
     "Wisconsin",
     "Wyoming"
 ]
+document.addEventListener("DOMContentLoaded", ()=>{
+    const selectLocation = document.getElementById("selectLocation")
+    selectLocation.onchange = filterByState;
+
+    const length = locationsArray.length
+    for (let i = 0; i < length; i++) {
+        let option = document.createElement("option");
+        option.textContent = locationsArray[i];
+        selectLocation.appendChild(option)
+    }
+})
+
