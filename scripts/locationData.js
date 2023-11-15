@@ -104,8 +104,8 @@ function individulPark(park, parentDiv) {
 
     addName(park, parkInfoDiv);
     addAddress(park, parkInfoDiv);
-    addContact(park, parkDiv);
-    // addSite(park, parkDiv);
+    addContact(park, parkInfoDiv);
+    addSite(park, parkInfoDiv);
 }
 
 function addName(park, parkInfoDiv) {
@@ -142,4 +142,16 @@ function addContact(park, parkInfoDiv) {
     }
     
     parkInfoDiv.appendChild(contactInfo);
+}
+
+function addSite(park, parkInfoDiv) {
+    const site = document.createElement("a");
+    for (const key in park) {
+        if(key == "Visit") {
+            if (park[key] != undefined) site.textContent += `Visit: ${park[key]}`;
+        }
+    }
+
+    parkInfoDiv.appendChild(site)
+
 }

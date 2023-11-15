@@ -71,3 +71,7 @@ h1, h2, h3, h4 {
 .details {
     text-decoration: overline;
 }
+.scroll-container {
+    height: 600px;
+    overflow: auto;
+}
