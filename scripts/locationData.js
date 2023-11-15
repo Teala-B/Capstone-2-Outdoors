@@ -56,14 +56,14 @@
     "Wyoming"
 ]
 document.addEventListener("DOMContentLoaded", ()=>{
-    const selectLocation = document.getElementById("selectLocation")
+    const selectLocation = document.getElementById("selectLocation");
     selectLocation.onchange = filterByState;
 
-    const length = locationsArray.length
+    const length = locationsArray.length;
     for (let i = 0; i < length; i++) {
         let option = document.createElement("option");
         option.textContent = locationsArray[i];
-        selectLocation.appendChild(option)
+        selectLocation.appendChild(option);
     }
 
     displayParks(nationalParksArray)
@@ -71,10 +71,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 function filterByState() {
     //this code fires everytime they make a change
-                    // let selectLocation = document.getElementById("selectLocation")
-                    // let selectedIndex = selectLocation.selectedIndex;
-                    // let selectedOption = selectLocation.options[selectedIndex];
-
+                
     let selected = document.getElementById("selectLocation").value;
     const parks = [];
     for(i=0; i< nationalParksArray.length; i++){
@@ -107,7 +104,7 @@ function individulPark(park, parentDiv) {
 
     addName(park, parkInfoDiv);
     addAddress(park, parkInfoDiv);
-    // addContact(park, parkDiv);
+    addContact(park, parkDiv);
     // addSite(park, parkDiv);
 }
 
@@ -120,13 +117,29 @@ function addName(park, parkInfoDiv) {
 
 function addAddress(park, parkInfoDiv) {
     const parkAddress = document.createElement("p");
+
+    parkAddress.innerText = "Address: ";
     for (const key in park) {
         if (key == "Address" || key == "City" || key == "Zip") {
-            if(park[key] != 0) parkAddress.innerText +=`${park[key]}`;
+            if(park[key] != 0) parkAddress.innerText +=` ${park[key]}`;
         }
-        else if (key == "State")parkAddress.innerText +=`${park[key]}`
+        else if (key == "State")parkAddress.innerText +=`, ${park[key]}`
     }
     
     parkInfoDiv.appendChild(parkAddress);
     
+}
+
+function addContact(park, parkInfoDiv) {
+    const contactInfo = document.createElement("p")
+    for (const key in park) {
+        if (key == "Phone") {
+            if(park[key] != 0) contactInfo.innerText +=`Phone: ${park[key]}`;
+        }
+        else if (key == "Fax") {
+            if(park[key] != 0) contactInfo.innerText +=` Fax: ${park[key]}`;
+        }
+    }
+    
+    parkInfoDiv.appendChild(contactInfo);
 }
