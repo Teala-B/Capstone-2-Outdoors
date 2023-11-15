@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 function filterByState() {
     //this code fires everytime they make a change
-    // let selectLocation = document.getElementById("selectLocation")
-    // let selectedIndex = selectLocation.selectedIndex;
-    // let selectedOption = selectLocation.options[selectedIndex];
+                    // let selectLocation = document.getElementById("selectLocation")
+                    // let selectedIndex = selectLocation.selectedIndex;
+                    // let selectedOption = selectLocation.options[selectedIndex];
 
     let selected = document.getElementById("selectLocation").value;
     const parks = [];
@@ -98,23 +98,35 @@ function displayParks(parks) {
 function individulPark(park, parentDiv) {
     // create a div for each product
     const parkDiv = document.createElement("div");
-    parkDiv.classList.add("product") ;
+    parkDiv.classList.add("park") ;
     // add product to the container
     parentDiv.appendChild(parkDiv);
+ // create the product info div 
+    const parkInfoDiv = document.createElement("div");
+    parkDiv.appendChild(parkInfoDiv);
 
-    addName(park, parkDiv);
-    addAddress(park, parkDiv);
+    addName(park, parkInfoDiv);
+    addAddress(park, parkInfoDiv);
     // addContact(park, parkDiv);
     // addSite(park, parkDiv);
 }
 
-function addName(park, parkDiv) {
-    // create the product info div 
-    const parkInfoDiv = document.createElement("div");
-    parkDiv.appendChild(parkInfoDiv);
-
+function addName(park, parkInfoDiv) {
     // add product header
-    const parkName = document.createElement("h5")
+    const parkName = document.createElement("h6")
     parkName.innerText = park.LocationName;
     parkInfoDiv.appendChild(parkName);
+}
+
+function addAddress(park, parkInfoDiv) {
+    const parkAddress = document.createElement("p");
+    for (const key in park) {
+        if (key == "Address" || key == "City" || key == "Zip") {
+            if(park[key] != 0) parkAddress.innerText +=`${park[key]}`;
+        }
+        else if (key == "State")parkAddress.innerText +=`${park[key]}`
+    }
+    
+    parkInfoDiv.appendChild(parkAddress);
+    
 }
