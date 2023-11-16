@@ -145,3 +145,8 @@ a {
     display: flex;
     justify-content: center;
 }
+
+#paragraph {
+   font-family: 'Courier New', Courier, monospace !important;
+   font-weight: 20;
+}
