@@ -168,7 +168,10 @@ function addSite(park, parkInfoDiv) {
     const site = document.createElement("a");
     for (const key in park) {
         if(key == "Visit") {
-            if (park[key] != undefined) site.innerText += `Visit: ${park[key]}`;
+            if (park[key] != undefined) {
+                site.href = park[key];
+                site.innerText += `Visit: ${park[key]}`;
+            }
         }
     }
 
