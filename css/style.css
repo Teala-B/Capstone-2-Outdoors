@@ -140,3 +140,8 @@ a {
     height: max-content;
     border-radius: 15px;
 }
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
