@@ -93,7 +93,6 @@ function filterByState() {
 
 function filterByType(parks) {
     let selected = document.getElementById("selectType").value;
-    //let space = " "
     let filteredParks = parks;
     if(selected != "All Park Types"){
         filteredParks = filteredParks.filter(n => n.LocationName.indexOf(selected) >= 0)

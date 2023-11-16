@@ -541,3 +541,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
 
 })
+
+function filterMountain() {
+    let selected = document.getElementById("selectMountain").value;
+    const mountain = [];
+    for(i=0; i< mountainsArray.length; i++){
+        if(mountainsArray[i].name == selected || selected == "Select A Mountain"){
+            parks.push(mountainsArray[i]);
+        }
+    }
+    displayMountain(mountain)
+}
+
+// function displayMountain() {
+//     const parentDiv = document.getElementById("displayMountainInfo");
+//     parentDiv.innerText = "";
+
+//     filteredParks.forEach(park => {
+//         individulPark(park, parentDiv)
+//     });
+        
+// } 
