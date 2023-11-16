@@ -80,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
 }
 h4 {
-    color:rgb(177, 97, 43)
+    color:rgb(177, 97, 43);
+    margin-top: 15px;
 }
 .pick {
     display: flex;
