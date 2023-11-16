@@ -530,15 +530,14 @@ const mountainsArray = [
 ]
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    const selectLocation = document.getElementById("selectMountain");
-    selectLocation.onchange = filterByState;
+    const selectMountain = document.getElementById("selectMountain");
+    //selectLocation.onchange = filterByState;
 
     const length = mountainsArray.length;
     for (let i = 0; i < length; i++) {
         let option = document.createElement("option");
-        option.textContent = mountainsArray[i];
-        selectLocation.appendChild(option);
+        option.textContent = mountainsArray[i].name; 
+        selectMountain.appendChild(option);
     }
 
-    
 })
