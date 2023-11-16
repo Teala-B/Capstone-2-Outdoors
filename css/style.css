@@ -105,7 +105,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .scroll-container {
     height: 600px;
+    max-width: 1000px !important;
     overflow: auto;
+    float: right;
+    
 }
 
 .side {
