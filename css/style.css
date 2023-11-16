@@ -4,12 +4,24 @@
     border: 2px solid;
 }
 .nav-link {
+    color: white;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.home {
     color: rgb(177, 97, 43);
     font-size: larger;
     font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
 }
 .nav-name {
+    color: white;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.nav-name-home {
     color: rgb(177, 97, 43);
     font-size: x-large;
     font-family:'Courier New', Courier, monospace;
@@ -20,7 +32,8 @@
     
 }
 #navBar {
-    background-color: white !important;
+    background-color: rgb(177, 97, 43) !important;
+    border-radius: 10px;
 }
 .divider {
     border-bottom: 7px solid rgb(177, 97, 43);
@@ -86,5 +99,9 @@ h4 {
 .pick {
     display: flex;
     justify-content: center;
+    color: rgb(84, 108, 63);
+}
+
+a {
     color: rgb(84, 108, 63);
 }
