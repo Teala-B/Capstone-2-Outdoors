@@ -531,7 +531,7 @@ const mountainsArray = [
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const selectMountain = document.getElementById("selectMountain");
-    //selectLocation.onchange = filterByState;
+    //selectLocation.onchange = filterMountain;
 
     const length = mountainsArray.length;
     for (let i = 0; i < length; i++) {
@@ -539,7 +539,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         option.textContent = mountainsArray[i].name; 
         selectMountain.appendChild(option);
     }
-
 })
 
 function filterMountain() {
@@ -553,7 +552,40 @@ function filterMountain() {
     displayMountain(mountain)
 }
 
-// function displayMountain() {
+function displayMountain(mountain) {
+    const parentDiv = document.getElementById("displayMountainInfo");
+    parentDiv.innerText = "";
+
+    // create a div for each product
+    const mountainDiv = document.createElement("div");
+    mountainDiv.classList.add("mountain") ;
+    // add product to the container
+    parentDiv.appendChild(mountainDiv);
+   // create the product info div 
+    const mountainInfoDiv = document.createElement("div");
+    mountainDiv.appendChild(mountainInfoDiv);
+
+    getMountainName(mountain, mountainInfoDiv)
+    //mountainImage()
+    //mountainDescription()
+    //mountainEffort()
+    //mountainEleveation()
+        
+} 
+
+function getMountainName(mountain, mountainInfoDiv) {
+    const mountainName = document.createElement("h4");
+    mountainName.innerText = mountain.name;
+    mountainInfoDiv.appendChild(mountainName);
+
+}
+
+
+
+
+
+
+// function mountains(mountain) {
 //     const parentDiv = document.getElementById("displayMountainInfo");
 //     parentDiv.innerText = "";
 
