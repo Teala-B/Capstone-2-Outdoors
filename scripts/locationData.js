@@ -169,6 +169,7 @@ function addSite(park, parkInfoDiv) {
         if(key == "Visit") {
             if (park[key] != undefined) {
                 site.href = park[key];
+                site.target = "_blank";
                 site.innerText += `Visit: ${park[key]}`;
             }
         }
