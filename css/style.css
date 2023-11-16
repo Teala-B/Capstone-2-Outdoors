@@ -133,6 +133,7 @@ a {
 
 .eye-grabber-small {
     color: rgb(84, 108, 63);
+    font-size: medium;
 }
 
 .nothing {
@@ -149,4 +150,8 @@ a {
 #paragraph {
    font-family: 'Courier New', Courier, monospace !important;
    font-weight: 20;
+}
+
+h5 {
+    text-decoration: underline;
 }
