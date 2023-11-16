@@ -110,7 +110,7 @@ function individulPark(park, parentDiv) {
 
 function addName(park, parkInfoDiv) {
     // add product header
-    const parkName = document.createElement("h5");
+    const parkName = document.createElement("h4");
     parkName.innerText = park.LocationName;
     parkInfoDiv.appendChild(parkName);
 }
@@ -148,7 +148,7 @@ function addSite(park, parkInfoDiv) {
     const site = document.createElement("a");
     for (const key in park) {
         if(key == "Visit") {
-            if (park[key] != undefined) site.textContent += `Visit: ${park[key]}`;
+            if (park[key] != undefined) site.innerText += `Visit: ${park[key]}`;
         }
     }
 
