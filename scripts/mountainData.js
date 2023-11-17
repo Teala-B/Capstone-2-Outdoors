@@ -598,14 +598,14 @@ function getMountainDescription(mountain, mountainInfoDiv) {
 
 function getMountainEffort(mountain, mountainInfoDiv) {
     const mountainEffort = document.createElement("p");
-    mountainEffort.innerText = `Effort: ${mountain.effort}`;
+    mountainEffort.innerHTML = `Effort: <span class ="mountainDetails"> ${mountain.effort} </span>`;
     mountainEffort.id = "info"
     mountainInfoDiv.appendChild(mountainEffort);
 }
 
 function getMountainEleveation(mountain, mountainInfoDiv) {
     const mountainElevation = document.createElement("p");
-    mountainElevation.innerText = `Elevation: ${mountain.elevation} ft.`;
+    mountainElevation.innerHTML = `Elevation: <span class ="mountainDetails"> ${mountain.elevation} ft. </span>`;
     mountainElevation.id = "info"
     mountainInfoDiv.appendChild(mountainElevation);
 }

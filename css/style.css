@@ -177,4 +177,9 @@ h1 {
 
 #info {
     color: rgb(84, 108, 63);
+    font-weight: bold;
+}
+
+.mountainDetails {
+    color:black;
 }
