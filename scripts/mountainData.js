@@ -531,7 +531,7 @@ const mountainsArray = [
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const selectMountain = document.getElementById("selectMountain");
-    //selectLocation.onchange = filterMountain;
+    selectMountain.onchange = filterMountain;
 
     const length = mountainsArray.length;
     for (let i = 0; i < length; i++) {
@@ -543,10 +543,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 function filterMountain() {
     let selected = document.getElementById("selectMountain").value;
-    const mountain = [];
+    let mountain = {} //[];
     for(i=0; i< mountainsArray.length; i++){
         if(mountainsArray[i].name == selected || selected == "Select A Mountain"){
-            parks.push(mountainsArray[i]);
+            mountain = mountainsArray[i];
         }
     }
     displayMountain(mountain)
@@ -559,15 +559,17 @@ function displayMountain(mountain) {
     // create a div for each product
     const mountainDiv = document.createElement("div");
     mountainDiv.classList.add("mountain") ;
+
     // add product to the container
     parentDiv.appendChild(mountainDiv);
+
    // create the product info div 
     const mountainInfoDiv = document.createElement("div");
     mountainDiv.appendChild(mountainInfoDiv);
 
     getMountainName(mountain, mountainInfoDiv)
-    //mountainImage()
-    //mountainDescription()
+    //getMountainImage(mountain, mountainInfoDiv)
+    //getMountainDescription(mountain, mountainInfoDiv)
     //mountainEffort()
     //mountainEleveation()
         
@@ -580,17 +582,14 @@ function getMountainName(mountain, mountainInfoDiv) {
 
 }
 
+function getMountainImage(mountain, mountainInfoDiv) {
+    const img = document.createElement("img");
+    img.src = "images/" + mountain.img;
+    mountainInfoDiv.appendChild(img);
+}
 
-
-
-
-
-// function mountains(mountain) {
-//     const parentDiv = document.getElementById("displayMountainInfo");
-//     parentDiv.innerText = "";
-
-//     filteredParks.forEach(park => {
-//         individulPark(park, parentDiv)
-//     });
-        
-// } 
+function getMountainDescription(mountain, mountainInfoDiv) {
+    const mountainDescription = document.createElement("p");
+    mountainDescription.innerText = mountain.desc;
+    mountainInfoDiv.appendChild(mountainDescription);
+}
