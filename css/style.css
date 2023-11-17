@@ -138,8 +138,9 @@ a {
 
 .nothing {
     background-color: rgb(11, 41, 21);
-    height: max-content;
+    height: 100%;
     border-radius: 15px;
+    color: rgb(11, 41, 21);
 }
 
 .middle {
@@ -160,9 +161,12 @@ h1 {
     color: rgb(177, 97, 43);
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
-#displayMountainInfo {
-    display: flex;
-    justify-content: center;
+#mountainImage {
+    margin-bottom: 40px;
+    width: 100%;
+    border: 7px solid rgb(177, 97, 43);
+    border-radius: 10px;
 }
