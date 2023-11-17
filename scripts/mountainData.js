@@ -592,6 +592,7 @@ function getMountainImage(mountain, mountainInfoDiv) {
 function getMountainDescription(mountain, mountainInfoDiv) {
     const mountainDescription = document.createElement("p");
     mountainDescription.innerText = mountain.desc;
+    mountainDescription.id = "mountainDescription"
     mountainInfoDiv.appendChild(mountainDescription);
 }
 

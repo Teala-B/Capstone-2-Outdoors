@@ -170,3 +170,7 @@ h1 {
     border: 7px solid rgb(177, 97, 43);
     border-radius: 10px;
 }
+
+#mountainDescription {
+    text-indent: 50px;
+}
