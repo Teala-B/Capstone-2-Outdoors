@@ -543,7 +543,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 function filterMountain() {
     let selected = document.getElementById("selectMountain").value;
-    let mountain = {} //[];
+    let mountain = {};
     for(i=0; i< mountainsArray.length; i++){
         if(mountainsArray[i].name == selected || selected == "Select A Mountain"){
             mountain = mountainsArray[i];
@@ -576,7 +576,7 @@ function displayMountain(mountain) {
 } 
 
 function getMountainName(mountain, mountainInfoDiv) {
-    const mountainName = document.createElement("h4");
+    const mountainName = document.createElement("h1");
     mountainName.innerText = mountain.name;
     mountainInfoDiv.appendChild(mountainName);
 
@@ -596,12 +596,12 @@ function getMountainDescription(mountain, mountainInfoDiv) {
 
 function getMountainEffort(mountain, mountainInfoDiv) {
     const mountainEffort = document.createElement("p");
-    mountainEffort.innerText = mountain.effort;
+    mountainEffort.innerText = `Effort: ${mountain.effort}`;
     mountainInfoDiv.appendChild(mountainEffort);
 }
 
 function getMountainEleveation(mountain, mountainInfoDiv) {
     const mountainElevation = document.createElement("p");
-    mountainElevation.innerText = mountain.elevation;
+    mountainElevation.innerText = `Elevation: ${mountain.elevation}`;
     mountainInfoDiv.appendChild(mountainElevation);
 }

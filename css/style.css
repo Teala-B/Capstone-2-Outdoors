@@ -155,3 +155,14 @@ a {
 h5 {
     text-decoration: underline;
 }
+
+h1 {
+    color: rgb(177, 97, 43);
+    display: flex;
+    justify-content: center;
+}
+
+#displayMountainInfo {
+    display: flex;
+    justify-content: center;
+}
