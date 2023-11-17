@@ -173,13 +173,16 @@ h1 {
 
 #mountainDescription {
     text-indent: 50px;
+    font-size: x-large;
+    margin-bottom: 30px;
 }
 
 #info {
-    color: rgb(84, 108, 63);
+    color: black;
     font-weight: bold;
+    text-indent: 50px;
 }
 
 .mountainDetails {
-    color:black;
+    color:rgb(84, 108, 63);;
 }

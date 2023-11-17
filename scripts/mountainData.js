@@ -579,7 +579,6 @@ function getMountainName(mountain, mountainInfoDiv) {
     const mountainName = document.createElement("h1");
     mountainName.innerText = mountain.name;
     mountainInfoDiv.appendChild(mountainName);
-
 }
 
 function getMountainImage(mountain, mountainInfoDiv) {
