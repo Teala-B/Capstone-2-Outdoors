@@ -570,8 +570,8 @@ function displayMountain(mountain) {
     getMountainName(mountain, mountainInfoDiv)
     getMountainImage(mountain, mountainInfoDiv)
     getMountainDescription(mountain, mountainInfoDiv)
-    getmountainEffort(mountain, mountainInfoDiv)
-    //mountainEleveation()
+    getMountainEffort(mountain, mountainInfoDiv)
+    getMountainEleveation(mountain, mountainInfoDiv)
         
 } 
 
@@ -594,8 +594,14 @@ function getMountainDescription(mountain, mountainInfoDiv) {
     mountainInfoDiv.appendChild(mountainDescription);
 }
 
-function getmountainEffort(mountain, mountainInfoDiv) {
+function getMountainEffort(mountain, mountainInfoDiv) {
     const mountainEffort = document.createElement("p");
     mountainEffort.innerText = mountain.effort;
     mountainInfoDiv.appendChild(mountainEffort);
+}
+
+function getMountainEleveation(mountain, mountainInfoDiv) {
+    const mountainElevation = document.createElement("p");
+    mountainElevation.innerText = mountain.elevation;
+    mountainInfoDiv.appendChild(mountainElevation);
 }
