@@ -186,3 +186,10 @@ h1 {
 .mountainDetails {
     color:rgb(84, 108, 63);;
 }
+
+.insta {
+    border-radius: 100%;
+    height: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+}
