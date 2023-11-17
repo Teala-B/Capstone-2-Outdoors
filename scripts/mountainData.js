@@ -15,7 +15,7 @@ const mountainsArray = [
         elevation: 5799,
         effort: "Strenuous",
         img: "Adams-StoryImage_2.jpg",
-        desc: "Mt. Adams (5,799') is the second highest peak in New England, offering spectacular views across the Great Gulf and King Ravine.",
+        desc: "Mt. Adams (5,799 feet) is the second highest peak in New England, offering spectacular views across the Great Gulf and King Ravine.",
         coords: {
             lat: 44.320686,
             lng: -71.291742
@@ -568,9 +568,9 @@ function displayMountain(mountain) {
     mountainDiv.appendChild(mountainInfoDiv);
 
     getMountainName(mountain, mountainInfoDiv)
-    //getMountainImage(mountain, mountainInfoDiv)
-    //getMountainDescription(mountain, mountainInfoDiv)
-    //mountainEffort()
+    getMountainImage(mountain, mountainInfoDiv)
+    getMountainDescription(mountain, mountainInfoDiv)
+    getmountainEffort(mountain, mountainInfoDiv)
     //mountainEleveation()
         
 } 
@@ -592,4 +592,10 @@ function getMountainDescription(mountain, mountainInfoDiv) {
     const mountainDescription = document.createElement("p");
     mountainDescription.innerText = mountain.desc;
     mountainInfoDiv.appendChild(mountainDescription);
+}
+
+function getmountainEffort(mountain, mountainInfoDiv) {
+    const mountainEffort = document.createElement("p");
+    mountainEffort.innerText = mountain.effort;
+    mountainInfoDiv.appendChild(mountainEffort);
 }
