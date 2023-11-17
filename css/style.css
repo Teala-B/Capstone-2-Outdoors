@@ -174,3 +174,7 @@ h1 {
 #mountainDescription {
     text-indent: 50px;
 }
+
+#info {
+    color: rgb(84, 108, 63);
+}
