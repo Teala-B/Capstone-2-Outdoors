@@ -84,7 +84,7 @@ function filterByState() {
     let selected = document.getElementById("selectLocation").value;
     const parks = [];
     for(i=0; i< nationalParksArray.length; i++){
-        if(nationalParksArray[i].State == selected || selected == "Select Location"){
+        if(nationalParksArray[i].State == selected || selected == "All Locations"){
             parks.push(nationalParksArray[i]);
         }
     }
