@@ -108,7 +108,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1000px !important;
     overflow: auto;
     float: right;
-    
 }
 
 .side {
@@ -202,6 +201,7 @@ h1 {
     /* background: rgb(177, 97, 43); */
     z-index: 1;
 }
+
 .footer-container {
     position: absolute;
     z-index: 1000;
@@ -216,7 +216,15 @@ h1 {
     background-color:  rgba(0, 0, 0, 0.437); /* Adjust the color and transparency */
 }
 
-
 .footer, .links {
     color: white !important;
+}
+
+.d-block {
+    border-radius: 50px;
+    border: 30px solid snow;
+} 
+
+.para1 {
+    text-indent: 50px;
 }
