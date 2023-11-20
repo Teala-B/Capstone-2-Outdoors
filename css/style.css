@@ -192,8 +192,31 @@ h1 {
     height: 50px;
     margin-top: 10px;
     text-decoration: none;
+    color: white !important;
 }
 .footer-image {
     width: 100%;
-    
+    position: absolute;
+    opacity: 0.5;
+    background: rgb(191, 76, 0);
+    /* background: rgb(177, 97, 43); */
+    z-index: 1;
+}
+.footer-container {
+    position: absolute;
+    z-index: 1000;
+    margin:20px;
+}
+
+.color-overlay {
+    position: absolute;
+    z-index: 500;
+    width: 1510px;
+    height: 570px;
+    background-color:  rgba(0, 0, 0, 0.437); /* Adjust the color and transparency */
+}
+
+
+.footer, .links {
+    color: white !important;
 }
