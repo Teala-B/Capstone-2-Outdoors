@@ -608,9 +608,3 @@ function getMountainEleveation(mountain, mountainInfoDiv) {
     mountainElevation.id = "info"
     mountainInfoDiv.appendChild(mountainElevation);
 }
-// async function getSunsetForMountain(mountain, mountainInfoDiv){
-//     let response = await fetch(
-//         `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
-//         let data = await response.json();
-//         return data;
-// }

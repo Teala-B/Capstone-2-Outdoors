@@ -5,6 +5,8 @@ A basic website, consisting of three simple pages, made with HTML, CSS, Bootstra
 ## Home Page
 
 ---
+![Home Page Layout Plan](images/read-me-home-layout.JPG)
+_The layout plan for the home page_
 
 The home page starts with a nav bar at the top.
 
@@ -31,6 +33,8 @@ Lastly there is a footer section that contains basic information about the websi
 ## National Parks Page
 
 ---
+![National Park Page Layout Plan](images/read-me-parks-layout.JPG)
+_The layout plan for the national park page_
 
 The next page contains national parks of different types from different states
 
@@ -47,10 +51,18 @@ _You **CAN ALSO** filter by **ONLY** the park type._
 ## Mountains Page
 
 ---
+![Mountains Page Layout Plan](images/read-me-moutains-layout.JPG)
+_The layout plan for the mountains page_
 
-Next is the registration page that allows new users to create an account.
+Last is the mountains page that contains different information about the selected mountain
 
-For added visual appeal there is a carousel containing three images.
+For added visual appeal there is a carousel with added text
+![Mountains Carousel](images/read-me-carousel.JPG)
+_There are three images_
 
-![Sign Up Form](images/registration.JPG)
+The page includes a selector for different mountains
+![Mountain Selector Box](images/read-me-moutain-select.JPG)
+_Users can choose by name_
 
+The information for the chosen mountain is dipalyed under
+![Mountain Display](images/read-me-mountain-display.JPG)
