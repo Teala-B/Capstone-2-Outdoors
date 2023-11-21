@@ -32,10 +32,17 @@ Lastly there is a footer section that contains basic information about the websi
 
 ---
 
-The next page is the login that contains a simple login form
+The next page contains national parks of different types from different states
 
-![Login Form](images/login.JPG)
-_The end of the page contains a link that leads to the registration form._
+The page consists of two filters, state and type, that can be used simultaneously or not at all
+![National Parks](images/read-me-parks-page.JPG)
+_The selectors/filters are on the left and the corresponding parks are displayed on the right._
+
+![State Filter](images/read-me-state.JPG)
+_You **CAN** filter by **ONLY** the state._
+
+![Type Filter](images/read-me-type.JPG)
+_You **CAN ALSO** filter by **ONLY** the park type._
 
 ## Mountains Page
 
