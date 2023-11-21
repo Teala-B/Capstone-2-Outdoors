@@ -118,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 h4 {
     color:rgb(177, 97, 43);
     margin-top: 15px;
+    text-decoration: overline;
 }
 
 .pick {
