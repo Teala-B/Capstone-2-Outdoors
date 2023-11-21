@@ -48,6 +48,11 @@ _You **CAN** filter by **ONLY** the state._
 ![Type Filter](images/read-me-type.JPG)
 _You **CAN ALSO** filter by **ONLY** the park type._
 
+Adding the different detials was for each park was a challenge in and of itself, however adding the site aspect was very interesting.
+Every park did not have a website link so I needed to filter through both an array and object, using the key, to see if there was a website.
+If it did then it would be added on to the corresponding park section.
+![Filter](images/read-me-interesting.JPG)
+
 ## Mountains Page
 
 ---
